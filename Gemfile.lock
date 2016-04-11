@@ -32,11 +32,6 @@ GEM
       haml
       tilt
       virtus
-    cucumber_timing_presenter (1.0.0.0)
-      cucumber
-    cuporter (0.3.14)
-      gherkin (>= 1.0.0)
-      nokogiri (>= 1.4.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.5)
@@ -51,13 +46,10 @@ GEM
     ice_nine (0.11.2)
     json (1.8.3)
     method_source (0.8.2)
-    mini_portile2 (2.0.0)
     multi_json (1.11.2)
     multi_test (0.1.2)
     multi_xml (0.5.5)
     mysql2 (0.4.3)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -111,11 +103,10 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   betterlorem
+  bundler
   cucumber
   cucumber-formatter
   cucumber_statistics
-  cucumber_timing_presenter
-  cuporter
   httparty
   pry
   rake

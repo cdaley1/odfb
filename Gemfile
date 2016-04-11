@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 ruby '2.2.4'
 
 # Cucumber & Testing
+gem 'bundler'
 gem 'rake'
 gem 'cucumber'
 gem 'cucumber-formatter'
