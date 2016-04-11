@@ -1,0 +1,78 @@
+[
+  {
+    "uri": "features/login.feature",
+    "id": "login-into-onedrive",
+    "keyword": "Feature",
+    "name": "Login into OneDrive",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "login-into-onedrive;login-with-correct-credentials",
+        "keyword": "Scenario",
+        "name": "Login with correct credentials",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69438000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/Login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15846816000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter my credentials",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/Login_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4091150000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be taken to my OneDrive my-site",
+            "line": 7,
+            "output": [
+              "Load Time: 0.823 seconds."
+            ],
+            "match": {
+              "location": "features/step_definitions/Login_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10994147000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

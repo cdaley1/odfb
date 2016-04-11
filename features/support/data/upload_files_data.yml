@@ -1,0 +1,13 @@
+#######################################################################################################################
+#
+# This file stores: File paths for test documents to upload
+#
+#######################################################################################################################
+files:
+  - assignment: create test assignment 1
+    name: test.doc
+    path: /features/support/upload_test_files/test.docx
+  - name: test.pdf
+    path: /features/support/upload_test_files/test.pdf
+  - name: test_powerpoint.pptx
+    path: /features/support/upload_test_files/test_pp.pptx
