@@ -5,7 +5,4 @@ end
 
 Then(/^the file should no longer be on the list$/) do
 	#expect(@browser.spans(class: "DetailsRow-cell name")[1]).exclude? "Courtney's actions.pptx"
-	
-	@logout = @app.login_page
-	@logout.logout
 end

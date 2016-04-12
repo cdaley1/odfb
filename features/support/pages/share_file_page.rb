@@ -6,7 +6,6 @@ class ShareFilePage <GenericPage
 	end
 
 	def enter_details
-		start_time = Time.new
 
   	pp = @browser.input(id: "PeoplePicker-textBox")
 		pp.when_present.click
@@ -27,11 +26,6 @@ class ShareFilePage <GenericPage
 		sleep 2
 		@browser.alert.exists?
 
-		end_time = Time.new
-  	duration = end_time - start_time
-  	puts "Step duration: #{duration}"
 	end
-
-
 
 end

@@ -19,4 +19,8 @@ class App
     ShareFilePage.new @browser
   end
 
+  def restore_page
+    RestorePage.new @browser
+  end
+
 end

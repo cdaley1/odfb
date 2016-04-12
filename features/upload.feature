@@ -1,6 +1,6 @@
 Feature: Upload file to OneDrive
 
-@upload
+@upload @clean
 Scenario: Upload a word document
 Given I am in my OneDrive
 When I upload a word document 

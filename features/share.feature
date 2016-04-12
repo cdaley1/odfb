@@ -1,6 +1,6 @@
 Feature: Share document 
 
-@share
+@share @clean
 Scenario: Share a Document with a colleague
 Given I am in my OneDrive
 When I select a document

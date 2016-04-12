@@ -29,3 +29,8 @@ Before do
   @base_url = "https://onedrive.live.com/about/en-US/business/"
   @app = App.new @browser
 end
+
+After('@login, @download, @delete, @share, @restore') do
+  @logout = @app.login_page
+  @logout.logout
+end

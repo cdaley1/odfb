@@ -12,10 +12,5 @@ Then(/^I should be taken to my OneDrive my\-site$/) do
   load_secs = @browser.performance.summary[:response_time] / 1000.to_f
   puts "Load Time: #{load_secs} seconds."
   Watir::Wait.until { @browser.as(class: "LeftNav-subLink ms-font-m")[3].exists? }
-  @start_time
   expect(@browser.url).to include("courtney_fspqmul_onmicrosoft_com")
-  @end_time
-
-  @logout = @app.login_page
-	@logout.logout
 end

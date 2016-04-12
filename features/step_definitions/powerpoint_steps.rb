@@ -4,8 +4,9 @@ When(/^I select a document$/) do
 end
 
 When(/^I choose to open it in powerpoint$/) do
-  @browser.spans(class: "CommandBarItem-commandText")[1].when_present.click
-  @browser.spans(class: "ContextualMenu-commandText")[1].when_present.click
+	sleep 2
+  @browser.spans(class: "CommandBarItem-commandText")[1].click
+  @browser.spans(class: "ContextualMenu-commandText")[1].click
 end
 
 Then(/^I should sign out$/) do
